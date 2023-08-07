@@ -5,7 +5,7 @@ const getContent = (content) => {
     return (<ul className="ease-in duration-300">{content.map((text, index) => {
       return (<li key={index}>
         <div className="flex flex-row">
-        <svg width="20" height="20" viewBox="0 0 72 72" id="emoji" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="color"> <path fill="#b1cc33" d="m61.5 23.3-8.013-8.013-25.71 25.71-9.26-9.26-8.013 8.013 17.42 17.44z"></path> </g> <g id="line"> <path fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="10" strokeWidth="2" d="m10.5 39.76 17.42 17.44 33.58-33.89-8.013-8.013-25.71 25.71-9.26-9.26z"></path> </g> </g></svg>
+        <svg width="20" height="20" viewBox="0 0 72 72" id="emoji" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="color"> <path fill="#b1cc33" d="m61.5 23.3-8.013-8.013-25.71 25.71-9.26-9.26-8.013 8.013 17.42 17.44z"></path> </g> <g id="line"> <path fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="10" strokeWidth="2" d="m10.5 39.76 17.42 17.44 33.58-33.89-8.013-8.013-25.71 25.71-9.26-9.26z"></path> </g> </g></svg>
           <div className="ml-2 text-lg">{text}</div>
         </div></li>)
     })}</ul>)
@@ -18,7 +18,7 @@ export const Tabs = () => {
   const tabs = [
     {
       title: "Loads",
-      "content": ["Dispatchers can create loads, keep track of ongoing loads etc.", "Admin can monitor load bookings on a tracking board.", "Loads can be filtered based on various parameters.", "Easy to use filters user interface."]
+      "content": ["User-roles based loads management.","Dispatchers can create loads, keep track of ongoing loads etc.", "Admin can monitor load bookings on a tracking board.", "Loads can be filtered based on various parameters.", "Easy to use filters user interface."]
     },
     {
       title: "Stats",
@@ -34,7 +34,11 @@ export const Tabs = () => {
     },
     {
       title: "Invoices",
-      "content": ["One click invoicing system integrated with payment processors like Stripe.", "Automatic synchronization of in app invoices with Stripe invoices.", "Filter invoices based on various parameters."]
+      "content": ["One click invoicing system integrated with payment processors like Stripe.", "Automatic synchronization of in app invoices with Stripe invoices.", "Filter invoices based on various parameters.", "Realtime notifications once the invoice is paid."]
+    },
+    {
+      title: "AI Insights",
+      "content": ["Get valuable AI insights on how to maximize profit.", "AI feature is currently in beta.", "More coming soon..."]
     },
   ]
 
