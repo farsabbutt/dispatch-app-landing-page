@@ -25,10 +25,56 @@ import '../styles/tailwind.min.css';
       .background-grey {
         background-color: #f5f5f5;
       }
+      .font-fancy {
+        font-size: 60px;
+        color: #4338c9;
+        font-family: cursive;
+    }
+    .fill-blue-500\/60 {
+    fill: rgba(59,130,246,.6);
+}
+.bg-spiral {
+  background-color: #FFFFFF;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpath fill='%23fbfbfb' d='M486 705.8c-109.3-21.8-223.4-32.2-335.3-19.4C99.5 692.1 49 703 0 719.8V800h843.8c-115.9-33.2-230.8-68.1-347.6-92.2C492.8 707.1 489.4 706.5 486 705.8z'/%3E%3Cpath fill='%23f7f7f7' d='M1600 0H0v719.8c49-16.8 99.5-27.8 150.7-33.5c111.9-12.7 226-2.4 335.3 19.4c3.4 0.7 6.8 1.4 10.2 2c116.8 24 231.7 59 347.6 92.2H1600V0z'/%3E%3Cpath fill='%23f2f2f2' d='M478.4 581c3.2 0.8 6.4 1.7 9.5 2.5c196.2 52.5 388.7 133.5 593.5 176.6c174.2 36.6 349.5 29.2 518.6-10.2V0H0v574.9c52.3-17.6 106.5-27.7 161.1-30.9C268.4 537.4 375.7 554.2 478.4 581z'/%3E%3Cpath fill='%23eeeeee' d='M0 0v429.4c55.6-18.4 113.5-27.3 171.4-27.7c102.8-0.8 203.2 22.7 299.3 54.5c3 1 5.9 2 8.9 3c183.6 62 365.7 146.1 562.4 192.1c186.7 43.7 376.3 34.4 557.9-12.6V0H0z'/%3E%3Cpath fill='%23EAEAEA' d='M181.8 259.4c98.2 6 191.9 35.2 281.3 72.1c2.8 1.1 5.5 2.3 8.3 3.4c171 71.6 342.7 158.5 531.3 207.7c198.8 51.8 403.4 40.8 597.3-14.8V0H0v283.2C59 263.6 120.6 255.7 181.8 259.4z'/%3E%3Cpath fill='%23eeeeee' d='M1600 0H0v136.3c62.3-20.9 127.7-27.5 192.2-19.2c93.6 12.1 180.5 47.7 263.3 89.6c2.6 1.3 5.1 2.6 7.7 3.9c158.4 81.1 319.7 170.9 500.3 223.2c210.5 61 430.8 49 636.6-16.6V0z'/%3E%3Cpath fill='%23f2f2f2' d='M454.9 86.3C600.7 177 751.6 269.3 924.1 325c208.6 67.4 431.3 60.8 637.9-5.3c12.8-4.1 25.4-8.4 38.1-12.9V0H288.1c56 21.3 108.7 50.6 159.7 82C450.2 83.4 452.5 84.9 454.9 86.3z'/%3E%3Cpath fill='%23f7f7f7' d='M1600 0H498c118.1 85.8 243.5 164.5 386.8 216.2c191.8 69.2 400 74.7 595 21.1c40.8-11.2 81.1-25.2 120.3-41.7V0z'/%3E%3Cpath fill='%23fbfbfb' d='M1397.5 154.8c47.2-10.6 93.6-25.3 138.6-43.8c21.7-8.9 43-18.8 63.9-29.5V0H643.4c62.9 41.7 129.7 78.2 202.1 107.4C1020.4 178.1 1214.2 196.1 1397.5 154.8z'/%3E%3Cpath fill='%23FFFFFF' d='M1315.3 72.4c75.3-12.6 148.9-37.1 216.8-72.4h-723C966.8 71 1144.7 101 1315.3 72.4z'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+}
+
+.without-dispatch-app {
+    background: #ff000012;
+    border-radius: 120px;
+    border: 1px solid #ff6161f5;
+    overflow: hidden;
+    min-height: 690px;
+}
+.with-dispatch-app {
+  background: #00800012;
+  overflow: hidden;
+  border: 1px solid #41c741;
+  border-radius: 120px;
+  min-height: 690px;
+}
+.label-container {
+    position: absolute;
+    background: #ffffff;
+    bottom: 14px;
+    z-index: 99999999;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 50px;
+}
+.text-wo-dispatch-app {
+  color: #ff7575;
+}
+.text-w-dispatch-app {
+  color: #3dbf3db8;
+}
       </style>
 </head>
 <body id="page" class="antialiased font-body bg-body text-body">
-    <div class="" id="content">
+    <div class="bg-spiral" id="content">
       <section data-section-id="3" data-share="" data-category="headers" data-component-id="44d0b9e2_01_awz" class="">
         <div class="container mx-auto overflow-hidden">
           <div class="flex items-center justify-between px-4 py-5" data-config-id="toggle-mobile" data-config-target=".navbar-menu" data-config-class="hidden">
@@ -151,7 +197,7 @@ import '../styles/tailwind.min.css';
                 </div>
               </div>
               <div class="w-full md:w-1/2 px-8">
-                <img class="transform hover:-translate-y-16 transition ease-in-out duration-1000" src="images/transport.png" alt="" data-config-id="auto-img-6-1">
+                <img class="transform hover:-translate-y-16 transition ease-in-out duration-1000" src="images/transport2.png" alt="" data-config-id="auto-img-6-1">
               </div>
             </div>
           </div>
@@ -351,7 +397,7 @@ import '../styles/tailwind.min.css';
               <img class="mx-auto transform hover:-translate-y-16 transition ease-in-out duration-1000" src="images/app-dashboard-preview.png" alt="" data-config-id="auto-img-1-2">
             </div>
             <div class="w-full md:w-1/2 p-8">
-              <h2 class="mb-20 text-6xl leading-tight md:text-7xl font-bold font-heading tracking-px-n leading-tight md:max-w-lg" data-config-id="auto-txt-1-2">Dispatch app provides all the missing features required by a dispatcher.</h2>
+              <h2 class="mb-20 text-6xl leading-tight md:text-6xl font-bold font-heading tracking-px-n leading-tight md:max-w-lg" data-config-id="auto-txt-1-2">Dispatch app provides all the missing features required by a dispatcher.</h2>
               <div class="flex flex-wrap -m-1.5">
                 <div class="w-full p-1.5">
                   <div class="flex flex-wrap -m-6">
@@ -407,7 +453,33 @@ import '../styles/tailwind.min.css';
         </div>
       </section>
 
-      <section data-section-id="5" data-share="" data-category="pricing" data-component-id="3ccf8f54_02_awz" class="bg-white relative pt-28 pb-36 bg-white overflow-hidden">
+      <section data-section-id="4" data-share="" data-category="how-it-works" data-component-id="eb023c5f_02_awz" class="pb-20 py-12 bg-white overflow-hidden">
+        <div class="container px-4 mx-auto">
+          <div><h2 class="mb-12 text-6xl md:text-8xl leading-tight lg:text-6xl font-bold font-heading md:max-w-xl leading-none mx-auto text-center">Comparison</h2></div>
+          <div class="flex flex-wrap lg:items-center -m-8 justify-center items-center">
+            <div class="w-full md:w-2/5 without-dispatch-app relative">
+              <img class="mx-auto transform hover:-translate-y-16 transition ease-in-out duration-1000" src="images/without-dispatch-app.png" alt="" data-config-id="auto-img-1-2" />
+              <div>
+                <div class="label-container"><h2 class="mb-6 text-3xl md:text-3xl leading-tight lg:text-3xl font-bold font-heading md:max-w-xl leading-none mx-auto text-center text-wo-dispatch-app">Without Dispatch App</h2></div>
+              </div>
+            </div>
+            <div class="w-full md:w-32 text-center relative">
+              <h2 class="mb-6 text-7xl md:text-7xl leading-tight lg:text-7xl font-bold font-heading md:max-w-xl leading-none mx-auto text-center font-fancy">VS</h2>
+              <!-- <svg aria-hidden="true" viewBox="0 0 418 42" class="absolute w-40 fill-blue-500/60" preserveAspectRatio="none"><path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z"></path></svg> -->
+            </div>
+            <div class="w-full md:w-2/5 with-dispatch-app relative">
+              <img class="mx-auto transform hover:-translate-y-16 transition ease-in-out duration-1000" src="images/dispatch_2_landing_page.png" alt="" data-config-id="auto-img-1-2" />
+              <div>
+                <div class="label-container">
+                <h2 class="mb-6 text-3xl md:text-3xl leading-tight lg:text-3xl font-bold font-heading md:max-w-xl leading-none mx-auto text-center text-w-dispatch-app">With Dispatch App</h2>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section data-section-id="5" data-share="" data-category="pricing" data-component-id="3ccf8f54_02_awz" class="background-grey relative pt-28 pb-36 bg-white overflow-hidden">
         <div class="relative z-10 container px-4 mx-auto">
           <h2 class="mb-6 text-6xl md:text-8xl xl:text-10xl font-bold font-heading tracking-px-n leading-none md:max-w-xl mx-auto" data-config-id="auto-txt-1-2">Select, Start, Grow</h2>
           <p class="mb-20 text-lg text-gray-900 text-center font-medium leading-normal md:max-w-lg mx-auto" data-config-id="auto-txt-2-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elemen tum.</p>
