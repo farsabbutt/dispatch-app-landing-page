@@ -26,7 +26,7 @@ export const Tabs = () => {
     },
     {
       title: "Carriers",
-      "content": ["Maintaine a comprehensive database of trucking companies.", "Manage carrier profiles.", "Manage carrier documents.", "Manage carrier authority.", "Manage w9Form, insurance etc.."]
+      "content": ["Maintain a comprehensive database of trucking companies.", "Manage carrier profiles.", "Manage carrier documents.", "Manage carrier authority.", "Manage w9Form, insurance etc.."]
     },
     {
       title: "Brokers",
