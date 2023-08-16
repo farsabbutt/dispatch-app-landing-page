@@ -342,6 +342,40 @@ ol, li {
 .carousel-image {
   border-radius: 20px;
 }
+
+.cta-form {
+  z-index: 2;
+  position: relative;
+  background: #f5f5f5;
+  border-radius: 20px;
+}
+
+.background-pattern {
+  z-index: 1;
+    top: 52px;
+    transform: scale(0.86);
+    right: -5%;
+}
+
+.chakra-icon {
+  width: 1em;
+    height: 1em;
+    display: inline;
+    line-height: 1em;
+    flex-shrink: 0;
+    color: #5cc98d;
+    margin-inline-end: 0.5rem;
+    vertical-align: text-bottom;
+}
+
+.demo-list-items {
+  margin: 0 20%;
+  font-size: 20px;
+}
+
+ul.demo-list-items li {
+  margin-top: 20px;
+}
       </style>
 </head>
 <body id="page" class="antialiased font-body bg-body text-body">
@@ -989,16 +1023,45 @@ ol, li {
         <div class="absolute bottom-0 left-0 w-full py-64 bg-indigo-600"></div>
       </section>
       <section id="request-demo" class="background-grey relative pt-16 pb-36 overflow-hidden">
-        <iframe
-         src="https://docs.google.com/forms/d/e/1FAIpQLSf7WxJ0NMWvFvdeE8P0F9Oz4r3SNhNElxLCxhFluYBnEeCCKA/viewform?embedded=true" 
-         width="100%" 
-         height="1050px" 
-         frameborder="0"
-         marginheight="0" 
-         marginwidth="0"
-         >
-         Loading…
-        </iframe>
+        <div class="relative container px-4 mx-auto">
+          <div>
+            <h2 class="mb-6 text-6xl md:text-6xl xl:text-6xl text-center font-bold font-heading tracking-px-n leading-none md:max-w-xl mx-auto" data-config-id="auto-txt-1-2">Demo</h2>
+            <div><p class="mb-6 text-lg text-gray-900 text-center font-medium leading-normal mx-auto">Request a demo to explore the dispatch app for yourself.</p></div>
+          </div>
+         <div class="flex flex-wrap">
+          <div class="w-full md:w-1/2 p-8">
+            <h2 class="mb-9 text-6xl md:text-2xl xl:text-2xl text-center font-bold font-heading tracking-px-n leading-none md:max-w-xl mx-auto" data-config-id="auto-txt-1-2">Check out the dispatch app features in minutes</h2>
+            <div>
+              <ul class="demo-list-items">
+                <li><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false" class="chakra-icon" role="presentation" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>Efficient Loads management</li>
+                <li><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false" class="chakra-icon" role="presentation" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>Dispatchers Management</li>
+                <li><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false" class="chakra-icon" role="presentation" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>Carriers Database</li>
+                <li><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false" class="chakra-icon" role="presentation" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>Invoicing</li>
+                <li><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false" class="chakra-icon" role="presentation" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>Realtime notifications</li>
+                <li><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false" class="chakra-icon" role="presentation" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>Brokers Listing</li>
+                <li><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false" class="chakra-icon" role="presentation" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>Helpful Statsistics</li>
+                <li><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false" class="chakra-icon" role="presentation" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>AI Reporting</li>
+                <li><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false" class="chakra-icon" role="presentation" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>and much more...</li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 p-8">
+            <div class="cta-form">
+              <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSf7WxJ0NMWvFvdeE8P0F9Oz4r3SNhNElxLCxhFluYBnEeCCKA/viewform?embedded=true" 
+            width="100%" 
+            height="800px" 
+            frameborder="0"
+            marginheight="0" 
+            marginwidth="0"
+            >
+            Loading…
+           </iframe>
+            </div>
+           <div class="absolute background-pattern"><svg width="1013" height="890" viewBox="0 0 1013 890" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M180.462 795.681L40.8315 567.776C19.5801 533.09 8.95466 515.747 4.64446 497.091C0.831363 480.586 0.608543 463.413 3.99145 446.712C7.81567 427.835 17.9843 409.924 38.3214 374.102L184.235 117.101C203.682 82.8483 213.405 65.722 227.028 52.9648C239.084 41.6743 253.303 32.9153 268.81 27.225C286.332 20.7958 306.003 19.8141 345.345 17.8502L644.507 2.91668C685.874 0.851143 706.557 -0.18069 725.22 4.94606C741.731 9.48141 757.023 17.479 770.074 28.4042C784.827 40.7544 795.51 58.1913 816.877 93.066L955.838 319.878C977.009 354.434 987.595 371.712 991.91 390.3C995.728 406.747 995.98 423.86 992.649 440.515C988.883 459.337 978.815 477.215 958.678 512.969L811.011 775.156C791.315 810.127 781.466 827.612 767.593 840.563C755.316 852.023 740.811 860.86 724.997 866.515C707.127 872.905 687.074 873.638 646.968 875.103L350.229 885.943L350.228 885.944C309.449 887.433 289.06 888.178 270.689 882.944C254.434 878.313 239.396 870.318 226.557 859.48C212.045 847.23 201.517 830.047 180.462 795.681Z" fill="#847eed"></path><path d="M179.711 769.196L58.7659 539.848C40.3585 504.942 31.155 487.489 28.2839 469.088C25.744 452.808 26.7984 436.065 31.3778 419.97C36.5543 401.778 47.9229 384.859 70.66 351.022L233.792 108.259C255.534 75.9041 266.405 59.7266 280.801 48.0099C293.543 37.6402 308.23 29.8499 323.963 25.1169C341.74 19.7693 361.233 19.8416 400.221 19.9857L696.692 21.0815C737.687 21.2325 758.184 21.3089 776.23 27.2798C792.194 32.562 806.699 41.1538 818.774 52.4806C832.423 65.2849 841.676 82.8321 860.183 117.928L980.548 346.176C998.887 380.95 1008.06 398.337 1010.94 416.674C1013.49 432.897 1012.46 449.584 1007.94 465.636C1002.82 483.778 991.558 500.669 969.023 534.451L803.775 782.175C781.734 815.216 770.713 831.737 756.054 843.629C743.084 854.153 728.106 862.004 712.074 866.687C693.957 871.978 674.104 871.643 634.398 870.973L340.624 866.016L340.623 866.016C300.251 865.335 280.065 864.994 262.316 858.934C246.611 853.572 232.358 844.996 220.486 833.765C207.067 821.072 197.948 803.779 179.711 769.196Z" fill="#4F46E5"></path></svg></div>  
+          </div>
+         </div>
+        </div>
       </section>
       
 <footer id="about" class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
